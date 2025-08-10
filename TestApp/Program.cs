@@ -195,91 +195,93 @@ internal class Program
             //    }
             //});
 
-            context.students.Add(new Student()
-            {
-                firstName = "Michael",
-                secondName = "Stephenson",
-                age = 21,
-                sc_S = new List<StudentCourse>()
-                {
-                    new StudentCourse()
-                    {
-                        crs = new Course()
-                        {
-                            nameCourse = "Math",
-                            teacherName = "Matthiew Broadth",
-                            mark = true
-                        },
-                    },
+            //context.students.Add(new Student()
+            //{
+            //    firstName = "Michael",
+            //    secondName = "Stephenson",
+            //    age = 21,
+            //    sc_S = new List<StudentCourse>()
+            //    {
+            //        new StudentCourse()
+            //        {
+            //            crs = new Course()
+            //            {
+            //                nameCourse = "Math",
+            //                teacherName = "Matthiew Broadth",
+            //                mark = true
+            //            },
+            //        },
 
-                    new StudentCourse()
-                    {
-                        crs = new Course()
-                        {
-                            nameCourse = "IT",
-                            teacherName = "Lydia Kostushko",
-                            mark = false
-                        },
-                    },
+            //        new StudentCourse()
+            //        {
+            //            crs = new Course()
+            //            {
+            //                nameCourse = "IT",
+            //                teacherName = "Lydia Kostushko",
+            //                mark = false
+            //            },
+            //        },
 
-                    new StudentCourse()
-                    {
-                        crs = new Course()
-                        {
-                            nameCourse = "PE",
-                            teacherName = "Charles Matt",
-                            mark = false
-                        },
-                    }
-                }
-            });
-
-
-            context.courses.Add(new Course()
-            {
-                nameCourse = "Chemistry",
-                teacherName = "Jacob Malone",
-                mark = true,
-                sc_C = new List<StudentCourse>()
-                {
-                    new StudentCourse()
-                    {
-                        stdnts = new Student()
-                        {
-                            firstName = "Mark",
-                            secondName = "Jamestown",
-                            age = 24
-                        }
-                    },
-
-                    new StudentCourse()
-                    {
-                        stdnts = new Student()
-                        {
-                            firstName = "Daniel",
-                            secondName = "Spark",
-                            age = 33
-                        }
-                    },
-
-                    new StudentCourse()
-                    {
-                        stdnts = new Student()
-                        {
-                            firstName = "Karlie",
-                            secondName = "Suddie",
-                            age = 21
-                        }
-                    }
-                },
-            });
+            //        new StudentCourse()
+            //        {
+            //            crs = new Course()
+            //            {
+            //                nameCourse = "PE",
+            //                teacherName = "Charles Matt",
+            //                mark = false
+            //            },
+            //        }
+            //    }
+            //});
 
 
-            context.SaveChanges();
+            //context.courses.Add(new Course()
+            //{
+            //    nameCourse = "Chemistry",
+            //    teacherName = "Jacob Malone",
+            //    mark = true,
+            //    sc_C = new List<StudentCourse>()
+            //    {
+            //        new StudentCourse()
+            //        {
+            //            stdnts = new Student()
+            //            {
+            //                firstName = "Mark",
+            //                secondName = "Jamestown",
+            //                age = 24
+            //            }
+            //        },
+
+            //        new StudentCourse()
+            //        {
+            //            stdnts = new Student()
+            //            {
+            //                firstName = "Daniel",
+            //                secondName = "Spark",
+            //                age = 33
+            //            }
+            //        },
+
+            //        new StudentCourse()
+            //        {
+            //            stdnts = new Student()
+            //            {
+            //                firstName = "Karlie",
+            //                secondName = "Suddie",
+            //                age = 21
+            //            }
+            //        }
+            //    },
+            //});
+
+
+            //context.SaveChanges();
 
             //if(context.studentsCourses.Any()) Console.WriteLine("Success!");
         }
 
-            Console.ReadLine();
+        Console.WriteLine("Happy birthday!");
+
+        Console.ReadLine();
     }
 }
