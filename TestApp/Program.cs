@@ -285,6 +285,11 @@ internal class Program
 
         Console.WriteLine("Happy birthday!");
         Output(12, 23, 'a');
+        Output(1, 22, 'd');
+        Output(7777, 1, 'g');
+        Output(123, 44, 'h');
+        Output(3123, 1, 'n');
+
         Console.ReadLine();
     }
 }
