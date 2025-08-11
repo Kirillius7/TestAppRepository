@@ -166,7 +166,13 @@ public class AppDbContext : DbContext
 
     }
 }
-
+class Human
+{
+    public int age { get; set; }
+    public string? name { get; set; }
+    public char ch { get; set; }
+    public bool truth { get; set; }
+}
 internal class Program
 {
     static string Check<T>(T a) where T : class =>
@@ -286,7 +292,19 @@ internal class Program
         }
 
         Console.WriteLine("Happy birthday!");
+
         OutputResult("the outcome is ", Result(33, 123));
+
+        Human hn = new Human()
+        {
+            name = "Nicolas",
+            age = 22,
+            ch = 'a',
+            truth = false
+        };
+
+        Console.WriteLine($"{hn.name}, {hn.age}, {hn.ch}, {hn.truth}");
+
         Console.ReadLine();
     }
 }
