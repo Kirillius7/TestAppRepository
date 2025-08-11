@@ -179,12 +179,7 @@ internal class Program
         $"result: {a.GetType()}";
     //delegate, function, event, funcs in linq
 
-    static int Result(int a, int b) => a * b;
 
-    static void OutputResult(string msg, int res)
-    {
-        Console.WriteLine($"{msg}: {res}");
-    }
     static void Main(string[] args)
     {
         using (var context = new AppDbContext())
@@ -292,9 +287,6 @@ internal class Program
         }
 
         Console.WriteLine("Happy birthday!");
-
-        OutputResult("the outcome is ", Result(33, 123));
-
         Human hn = new Human()
         {
             name = "Nicolas",
@@ -304,7 +296,6 @@ internal class Program
         };
 
         Console.WriteLine($"{hn.name}, {hn.age}, {hn.ch}, {hn.truth}");
-
         Console.ReadLine();
     }
 }
