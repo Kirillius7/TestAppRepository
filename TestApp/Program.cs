@@ -167,12 +167,6 @@ public class AppDbContext : DbContext
     }
 }
 
-class Human
-{
-    public int age { get; set; }
-    public string? name { get; set; }
-    public bool marriageStatus { get; set; }
-}
 internal class Program
 {
     static string Check<T>(T a) where T : class =>
@@ -287,13 +281,7 @@ internal class Program
         }
 
         Console.WriteLine("Happy birthday!");
-        Human hn = new Human()
-        {
-            age = 33,
-            name = "Michael Carrick",
-            marriageStatus = true
-        };
-        Console.WriteLine(hn.age + " " + hn.name + " " + hn.marriageStatus);
+
         Console.ReadLine();
     }
 }
