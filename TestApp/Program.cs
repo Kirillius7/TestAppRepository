@@ -173,8 +173,6 @@ class Human
     public string? name { get; set; }
     public bool marriageStatus { get; set; }
 }
-
-
 internal class Program
 {
     static string Check<T>(T a) where T : class =>
@@ -299,12 +297,6 @@ internal class Program
             marriageStatus = true
         };
         Console.WriteLine(hn.age + " " + hn.name + " " + hn.marriageStatus);
-        Output(1, 2, 'a');
-        Output(2, 3, 'b');
-        Output(3, 4, 'c');
-        Output(4, 5, 'd');
-        Output(5, 6, 'e');
-        Output(6, 7, 'f');
 
         Console.ReadLine();
     }
