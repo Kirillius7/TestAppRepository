@@ -293,7 +293,7 @@ internal class Program
             name = "Michael Carrick",
             marriageStatus = true
         };
-
+        Console.WriteLine(hn.age + " " + hn.name + " " + hn.marriageStatus);
         Console.ReadLine();
     }
 }
