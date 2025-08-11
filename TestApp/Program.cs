@@ -283,8 +283,11 @@ internal class Program
         Console.WriteLine("Happy birthday!");
 
 
-        Console.WriteLine($"{hn.name}, {hn.age}, {hn.ch}, {hn.truth}, is all about {hn.name}");
+        OutputResult("the outcome is ", Result(33, 123));
+        OutputResult("the outcome is ", Result(44, 55123));
 
+
+        Console.WriteLine($"{hn.name}, {hn.age}, {hn.ch}, {hn.truth}, is all about {hn.name}");
 
         Console.ReadLine();
     }
