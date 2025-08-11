@@ -294,16 +294,8 @@ internal class Program
         Console.WriteLine("Happy birthday!");
 
         OutputResult("the outcome is ", Result(33, 123));
+        OutputResult("the outcome is ", Result(44, 55123));
 
-        Human hn = new Human()
-        {
-            name = "Nicolas",
-            age = 22,
-            ch = 'a',
-            truth = false
-        };
-
-        Console.WriteLine($"{hn.name}, {hn.age}, {hn.ch}, {hn.truth}");
 
         Console.ReadLine();
     }
