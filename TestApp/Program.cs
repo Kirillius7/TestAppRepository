@@ -166,25 +166,14 @@ public class AppDbContext : DbContext
 
     }
 }
-class Human
-{
-    public int age { get; set; }
-    public string? name { get; set; }
-    public char ch { get; set; }
-    public bool truth { get; set; }
-}
+
 internal class Program
 {
     static string Check<T>(T a) where T : class =>
         $"result: {a.GetType()}";
     //delegate, function, event, funcs in linq
 
-    static int Result(int a, int b) => a * b;
 
-    static void OutputResult(string msg, int res)
-    {
-        Console.WriteLine($"{msg}: {res}");
-    }
     static void Main(string[] args)
     {
         using (var context = new AppDbContext())
@@ -293,9 +282,12 @@ internal class Program
 
         Console.WriteLine("Happy birthday!");
 
+
         OutputResult("the outcome is ", Result(33, 123));
         OutputResult("the outcome is ", Result(44, 55123));
 
+
+        Console.WriteLine($"{hn.name}, {hn.age}, {hn.ch}, {hn.truth}, is all about {hn.name}");
 
         Console.ReadLine();
     }
