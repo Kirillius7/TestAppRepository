@@ -179,7 +179,10 @@ internal class Program
         $"result: {a.GetType()}";
     //delegate, function, event, funcs in linq
 
-
+    static void Output(int a, int b, char c)
+    {
+        Console.WriteLine($"{a}, {b}, {c}");
+    }
     static void Main(string[] args)
     {
         using (var context = new AppDbContext())
@@ -294,6 +297,7 @@ internal class Program
             marriageStatus = true
         };
         Console.WriteLine(hn.age + " " + hn.name + " " + hn.marriageStatus);
+
         Console.ReadLine();
     }
 }
