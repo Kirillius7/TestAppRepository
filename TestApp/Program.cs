@@ -295,7 +295,7 @@ internal class Program
             truth = false
         };
 
-        Console.WriteLine($"{hn.name}, {hn.age}, {hn.ch}, {hn.truth}");
+        Console.WriteLine($"{hn.name}, {hn.age}, {hn.ch}, {hn.truth}, is all about {hn.name}");
         Console.ReadLine();
     }
 }
