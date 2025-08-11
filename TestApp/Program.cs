@@ -281,7 +281,10 @@ internal class Program
         }
 
         Console.WriteLine("Happy birthday!");
-
+        Console.WriteLine("Migos three chain");
+        int a = 10;
+        int b = 22;
+        Console.WriteLine(a + b);
         Console.ReadLine();
     }
 }
